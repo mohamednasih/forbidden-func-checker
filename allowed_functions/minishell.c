@@ -26,31 +26,6 @@ int * __errno_location(void) {
 	return (NULL);
 }
 
-
-/* readline functions */
-char *readline(const char *prompt) {
-    (void)prompt;
-    return NULL;
-}
-
-void rl_clear_history(void) {
-    /* No return in void function */
-}
-
-int rl_on_new_line(void) {
-    return 0;
-}
-
-void rl_replace_line(const char *text, int clear_undo) {
-    (void)text;
-    (void)clear_undo;
-    /* No return in void function */
-}
-
-void rl_redisplay(void) {
-    /* No return in void function */
-}
-
 void add_history(const char *line) {
     (void)line;
 }

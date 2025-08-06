@@ -7,7 +7,7 @@ This tool detects forbidden function usage in 42 school projects by attempting t
 Clone this repository into the root of your 42 project:
 
 ```bash
-git clone https://github.com/yourname/forbidden-function-checker.git
+git@github.com:mohamednasih/forbidden-func-checker.git
 ```
 
 ## 🛠️ Makefile Integration
@@ -21,7 +21,7 @@ INCLUDE := -I ./include
 CFLAGS := -Wall -Wextra -g -ffreestanding -fno-builtin -fno-tree-loop-distribute-patterns $(INCLUDE)
 
 PROJECT_OBJECTS_AND_LIBRARIES := $(OBJ) $(LDLIBS)
-ALLOWED_FCTS_DIR := forbidden-function-checker/allowed_functions
+ALLOWED_FCTS_DIR := forbidden-func-checker/allowed_functions
 
 check_forbidden_%:
 	$(CC) -c $(ALLOWED_FCTS_DIR)/$*.c
